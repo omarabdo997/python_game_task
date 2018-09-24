@@ -3,7 +3,6 @@ import random
 x = random.randint(1, 9)
 y = random.randint(1, 9)
 z = random.randint(1, 9)
-answerlist = [x, y, z]
 
 
 def check_pres_in_array(item, arry):
@@ -18,6 +17,8 @@ while (y == x):
     y = random.randint(1, 9)
 while (z == x or z == y):
     z = random.randint(1, 9)
+answerlist = [x, y, z]
+
 print("You need to enter 3 numbers from 1-9 in 3 slots in a certain order digits can not be repeated")
 while (1):
     in1 = int(input("Enter first number : "))
